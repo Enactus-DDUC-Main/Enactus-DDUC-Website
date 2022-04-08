@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static' , filename = 'Resources/main_style.css')}}"">
+    <link rel="shortcut icon" href="{{ url_for('static' , filename = 'Assets/title.png')}}" type="image/ico">
+    <title>Enactus</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #ffffff;">
+        <a class="navbar-brand d-lg-none" href="#home" onclick="window.location.reload(true);"><img src="{{ url_for('static' , filename = 'Assets/logo.png')}}" width="100px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler7" aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbarToggler7">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home" id="homenav">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ourstory" id="ourstorynav">OUR STORY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link leftmardec" href="#achievements" id="achievementsnav">ACHIEVEMENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link leftmardec" href="#ourprojects" id="ourprojectsnav">OUR PROJECTS</a>
+                </li>
+                <a class="d-none d-lg-block logo" href="#home" onclick="window.location.reload(true);"><img src="{{ url_for('static' , filename = 'Assets/logo.png')}}" width="100px"></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events" id="eventsnav">EVENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team" id="teamnav">TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#newsletter" id="newsletternav">NEWSLETTER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" id="contactnav">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="home" class="setheight">
+        <div class="jumbotron" style="background:transparent">
+            <p id="welcome">&ensp;Welcome to</p>
+            <h1 id="name">Enactus<br>DDUC</h1>
+            <p id="intro" class="chngtopop">
+                We, at Enactus DDUC, focus on empowering the youth and accomplishing our goal of education, hygiene, regular employment, and sustainability.
+            </p>
+            <p class="lead">
+                <a class="btn btn-warning btn-lg chngtopop" href="#events" role="button">EXPLORE</a>
+            </p>
+        </div>
+        <img src="{{ url_for('static' , filename = 'Assets/banner.jpg')}}" id="banner">
+    </div>
+    <div class="whitebg">
+        <div class="greybg">
+            <div id="ourstory" class="container-fluid setheight">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="jumbotron ourjumbo" style="background:transparent">
+                            <div>
+                                <p class="our story">Our Story</p>
+                                <p class="chngtopop storyp"><span class="yellowstory">en</span>trepreneurial</p>
+                                <p class="chngtopop storyp"><span class="yellowstory">act</span>ion for others</p>
+                                <p class="chngtopop storyp">Creates better world for</p>
+                                <p class="chngtopop storyp"><span class="yellowstory">us</span>&nbsp;all</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm zindexstory">
+                        <div class="storycard" id="animatecard1">
+                            <img src="{{ url_for('static' , filename = 'Assets/story1.png')}}" class="storypic chngtopop">
+                            <p class="visionmission">OUR VISION</p>
+                            <p class="visionmission_des chngtopop">To create a better and more sustainable world.</p>
+                        </div>
+                        <div class="storycard mission" id="animatecard2">
+                            <img src="{{ url_for('static' , filename = 'Assets/story2.png')}}" class="storypic chngtopop">
+                            <p class="visionmission">OUR MISSION</p>
+                            <p class="visionmission_des chngtopop">Engage the next generation of entrepreneurial leaders to use innovation and business principles to improve the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footerrow">
+                    <footer id="storyfooter" class="container-fluid">
+                        <p id="storyfooterp" class="chngtopop">
+                            We, at Enactus, endeavor to tap into the entrepreneurial spirit that lives within each of us and channel the unique talents, passions, and ideas we possess to take actions that create a better, more sustainable world for us all.
+                        </p>
+                    </footer>
+                </div>
+            </div>
+            <div class="chngtopop storyfooterm">
+                We, at Enactus, endeavor to tap into the entrepreneurial spirit that lives within each of us and channel the unique talents, passions, and ideas we possess to take actions that create a better, more sustainable world for us all.
+            </div>
+        </div>
+        <div id="achievements" class="container-fluid setheightfit">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="jumbotron ourjumbo" style="background:transparent">
+                        <div>
+                            <p class="ourachievements">Our Achievements</p>
+                        </div>
+                    </div>
+                    <div id="carouselExampleControls" class="carousel slide projectslide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carouselcard">
+                                    <p class="chngtopop achievement_card_title">PROJECT SAHEJ</p>
+                                    <div class="achievement_img_border">
+                                        <img src="{{ url_for('static' , filename = 'Assets/achievement1.png')}}" class="achievement_card_img">
+                                    </div>
+
+
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement1_more" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample" role="button">READ MORE</button>
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement1_less" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample" role="button">READ LESS</button>
+
+
+                                    <div class="collapse" id="collapse1">
+                                        <div class="card card-body">
+                                            <ul>
+                                                <li>
+                                                    This project was launched in November 2019 aimed at reusing PET bottles.
+                                                </li>
+                                                <li>
+                                                    Sold 50+ pots in diwali mela (2019) and by taking personal customised orders. The prices of pots ranged between 80-150rs/piece
+                                                </li>
+                                                <li>
+                                                    Sold 10-15 pens, the prices ranged between 10-20rs/piece
+                                                </li>
+                                                <li>
+                                                    Sold 10-15 customised paper bags. The price ranged between 20-30rs/piece
+                                                </li>
+                                                <li>
+                                                    Total revenue was around 4,500-5,000Rs, which was transferred to the community.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carouselcard">
+                                    <p class="chngtopop achievement_card_title">RUNNER UP IN BSC BY ENACTUS INDIA</p>
+                                    <div class="achievement_img_border">
+                                        <img src="{{ url_for('static' , filename = 'Assets/achievement2.png')}}" class="achievement_card_img">
+                                    </div>
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement2_more" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample" role="button">READ MORE</button>
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement2_less" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample" role="button">READ LESS</button>
+
+                                    <div class="collapse" id="collapse2">
+                                        <div class="card card-body">
+                                            March 2021: The Ecobricking vertical of our Project Aakaar won second position in a national level competition named as Beneficiary Skilling Competition hosted by Enactus India.
+                                            <div class="center">
+                                                <a href="https://www.instagram.com/tv/CMBiLbZAk89/?utm_medium=copy_link"><img src="{{ url_for('static' , filename = 'Assets/instagram.png')}}" style="width: 30px; margin-top: 20px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <a href="https://drive.google.com/drive/folders/1Clu-omwkyKgU03XGfJZLeyE95sJETCp1?usp=sharing"><img src="{{ url_for('static' , filename = 'Assets/video.png')}}" style="width: 30px; margin-top: 20px;"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carouselcard">
+                                    <p class="chngtopop achievement_card_title">ENACTOPEDIA</p>
+                                    <div class="achievement_img_border">
+                                        <img src="{{ url_for('static' , filename = 'Assets/achievement3.png')}}" class="achievement_card_img">
+                                    </div>
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement3_more" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample" role="button">READ MORE</button>
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement3_less" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample" role="button">READ LESS</button>
+
+                                    <div class="collapse" id="collapse3">
+                                        <div class="card card-body">
+                                            Participated in a Sustainable Business Development Competition organised by Enactus,UBS named as Enactopedia, made it to round 2 and amongst 100+ teams we ended up being in top 10 teams.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carouselcard">
+                                    <p class="chngtopop achievement_card_title">PROJECT AAKAAR</p>
+                                    <div class="achievement_img_border">
+                                        <img src="{{ url_for('static' , filename = 'Assets/achievement4.png')}}" class="achievement_card_img">
+                                    </div>
+
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement4_more" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample" role="button">READ MORE</button>
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement4_less" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample" role="button">READ LESS</button>
+
+                                    <div class="collapse" id="collapse4">
+                                        <div class="card card-body">
+                                            Project Aakaar aims to become a solution to the excessive presence of single use plastic in the environment causing global climate change. Herein, the single-use plastic is being converted into useful resources. This project has gone for the National
+                                            Competition 2021,organized by Enactus India.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ourprojects" class="container-fluid setheightfit">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="jumbotron ourjumbo" style="background:transparent">
+                        <div>
+                            <p class="our">Our Projects</p>
+                        </div>
+                    </div>
+                    <p class="chngtopop projectsp">Enactus DDUC strives to reach new milestones to engender an environment that is more potent and thus aims to create an impact and uplift communities. With our business models, we help the community in optimal utilization of their skills
+                        and resources.</p>
+                </div>
+                <div class="col-sm">
+                    <div>
+                        <div class="projectscard" id="projectscardanimation">
+                            <p class="projectstitle chngtopop">PROJECT MEHSOOS</p>
+                            <img src="{{ url_for('static' , filename = 'Assets/mehsoos.png')}}" class="mehsoos_logo">
+                            <p class="mehsoos_des">To create an environment where mental health is valued and respected.</p>
+                            <button class="btn btn-light btn-lg chngtopop" type = "button" onclick = 'location.href="/project_mehsoos"'>EXPLORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="events" class="container-fluid setheightfit">
+            <div class="eventpage">
+                <div class="jumbotron ourjumbo" style="background:transparent">
+                    <p class="ourachievements">Events</p>
+                </div>
+                <div id="Eventscarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row eventsliderow">
+                                <div class="col-md">
+                                    <img class="eventslideimg" src="{{ url_for('static' , filename = 'Assets/Event1.png')}}">
+                                </div>
+                                <div class="col-md eventp chngtopop">
+                                    On the occasion of National Nutrition Week Enactus DDUC conducted an informative live session on NUTRITION 101 with DT. LAKSHITA JAIN. Dt. Lakshita is the founder of health clinic Nutr. She is constantly writing leading newspapers such as Times of India,
+                                    HT city, Femina, Cosmopolitan, and many more. She is a diabetes educator, meat technologist and has been counseling people on PCOS, weight loss, right eating.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row eventsliderow">
+                                <div class="col-md">
+                                    <img class="eventslideimg" src="{{ url_for('static' , filename = 'Assets/Event2.png')}}">
+                                </div>
+                                <div class="col-md eventp chngtopop">
+                                    Enactus DDUC successfully conducted a very insightful and informative session on ‘Nutrition 101: Malnutrition and other eating disorders’ with clinical dietician and sports nutritionist Ms. Manisha Mehta, a food scientist, holds a certification in sports
+                                    nutrition from California with 8+ years of experience.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row eventsliderow">
+                                <div class="col-md">
+                                    <img class="eventslideimg" src="{{ url_for('static' , filename = 'Assets/Event3.png')}}">
+                                </div>
+                                <div class="col-md eventp chngtopop">
+                                    Enactus DDUC hosted a two-day "Orientation Programme 2021", wherein we gathered a total audience of 500 students. During the first part of the program which was held under Deeksharambh, our Co-President Akanshi Sharma and Director of Project Execution
+                                    Astha, gave insight into the world of Enactus.<br>
+                                    <div class="collapse" id="collapseevent">
+                                        <div class="">
+                                            On day two, a semi-formal event called 'Alumni Alcove' was held wherein Co-President Nitish Brahma and Director of Research & Development Divyanshi Garg were in conversation with the alumni of Enactus DDUC, Kartik Khatri (Ex-President and founding team
+                                            member of Enactus DDUC) from the batch of 2015-18 and Ram Gupta (President for the tenure 2020-21) from the batch of 2019-22. The participants consisted of our core team, senior team members and freshers, who
+                                            came together to learn about the rich history of Enactus DDUC and to gain motivation from the ones that have been through college life and have moved on to greater steps on their career paths.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center" style="margin-top: 20px;">
+                                    <button class="btn btn-warning btn-lg chngtopop readmore" id="readmoreevent" data-toggle="collapse" data-target="#collapseevent" aria-expanded="false" aria-controls="collapseExample" role="button">READ MORE</button>
+                                    <button class="btn btn-warning btn-lg chngtopop readmore" id="readlessevent" data-toggle="collapse" data-target="#collapseevent" aria-expanded="false" aria-controls="collapseExample" role="button">READ LESS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row eventsliderow">
+                                <div class="col-md">
+                                    <img class="eventslideimg" src="{{ url_for('static' , filename = 'Assets/event4.png')}}">
+                                </div>
+                                <div class="col-md eventp chngtopop">
+                                    Conducted an online 2-day event Nexus_22 which had a footfall of 800+ participants from all over Delhi University and increased the branch image by 40%. Nexus_22 was conducted to promote Enactus DDUC and its projects, primarily Project Mehsoos, and to
+                                    be a source of joy during the tough times of the Covid-19 Pandemic.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev teamarrows" href="#Eventscarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next teamarrows" href="#Eventscarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="team" class="container-fluid setheightfit">
+            <div class="row addpadding">
+                <div class="col-sm">
+                    <div class="jumbotron ourjumbo" style="background:transparent">
+                        <div>
+                            <p class="our mentor">Our Mentors</p>
+                        </div>
+                    </div>
+                    <div class="outer">
+                        <div class="inner">
+                            <img src="{{ url_for('static' , filename = 'Assets/principal.png')}}" class="principalimg">
+                        </div>
+                        <p class="p_n_a_name chngtopop">Dr. Hemchand Jain</p>
+                        <p class="p_n_a chngtopop">Principal</p>
+                        <div class="line"></div>
+                        <div class="contactcontainer">
+
+                            <a href="mailto:principaldducollege@gmail.com"><img src="{{ url_for('static' , filename = 'Assets/emailmentor.png')}}" class="mentorcontact center"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="jumbotron ourjumbo" style="background:transparent">
+                        <div>
+                            <p class="our hide">ㅤ</p>
+                        </div>
+                    </div>
+                    <div class="outer outadvisor">
+                        <div class="inner">
+                            <img src="{{ url_for('static' , filename = 'Assets/advisor.png')}}" class="advisorimg">
+                        </div>
+                        <p class="p_n_a_name chngtopop">Dr.Yogieta S.Mehra</p>
+                        <p class="p_n_a chngtopop">Falculty Advisor</p>
+                        <div class="line"></div>
+                        <div class="contactcontainer">
+                            <a href="https://www.linkedin.com/in/dr-yogieta-sondhi-mehra-6a395b4"><img src="{{ url_for('static' , filename = 'Assets/linkedinmentor.png')}}" class="mentorcontact"></a>
+                            <a href="mailto:yogieta@gmail.com"><img src="{{ url_for('static' , filename = 'Assets/emailmentor.png')}}" class="mentorcontact"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="team2" class="container-fluid setheightfit">
+            <div class="row">
+                <div class="col-lg-5" style="padding: 0%;">
+                    <div class="jumbotron ourjumbo" style="background:transparent">
+                        <div>
+                            <p class="our">Executive Council</p>
+                        </div>
+                    </div>
+                    <div id="carouselControls" class="carousel slide teamslide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active team_carousel">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <img src="{{ url_for('static' , filename = 'Assets/president1.png')}}" class="president1img">
+                                    </div>
+                                    <p class="p_n_a_name chngtopop">Nitish Brahma</p>
+                                    <p class="p_n_a chngtopop">Co-President</p>
+                                    <div class="line"></div>
+                                    <div class="contactcontainer">
+                                        <a href="https://www.linkedin.com/in/nitish-brahma-4764601b2"><img src="{{ url_for('static' , filename = 'Assets/linkedinmentor.png')}}" class="mentorcontact"></a>
+                                        <a href="mailto:nitishbrhm@gmail.com"><img src="{{ url_for('static' , filename = 'Assets/emailmentor.png')}}" class="mentorcontact"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item team_carousel">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <img src="{{ url_for('static' , filename = 'Assets/president2.png')}}" class="president2img">
+                                    </div>
+                                    <p class="p_n_a_name chngtopop">Akanshi Sharma</p>
+                                    <p class="p_n_a chngtopop">Co-President</p>
+                                    <div class="line"></div>
+                                    <div class="contactcontainer">
+                                        <a href="https://www.linkedin.com/in/akanshi-sharma-797890201"><img src="{{ url_for('static' , filename = 'Assets/linkedinmentor.png')}}" class="mentorcontact"></a>
+                                        <a href="mailto:Akanshi304@gmail.com"><img src="{{ url_for('static' , filename = 'Assets/emailmentor.png')}}" class="mentorcontact"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item team_carousel">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <img src="{{ url_for('static' , filename = 'Assets/nikita.png')}}" class="nikitaimg">
+                                    </div>
+                                    <p class="p_n_a_name chngtopop">Nikita Gupta</p>
+                                    <p class="p_n_a chngtopop">Director of Operations and Finance</p>
+                                    <div class="line"></div>
+                                    <div class="contactcontainer">
+                                        <a href="https://www.linkedin.com/in/nikita-gupta-22a9b6201"><img src="{{ url_for('static' , filename = 'Assets/linkedinmentor.png')}}" class="mentorcontact"></a>
+                                        <a href="mailto:guptanikki200211@gmail.com"><img src="{{ url_for('static' , filename = 'Assets/emailmentor.png')}}" class="mentorcontact"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item team_carousel">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <img src="{{ url_for('static' , filename = 'Assets/ananya.png')}}" class="ananyaimg">
+                                    </div>
+                                    <p class="p_n_a_name chngtopop">Ananya Ojha</p>
+                                    <p class="p_n_a chngtopop">Director of Research and Dev.</p>
+                                    <div class="line"></div>
+                                    <div class="contactcontainer">
+                                        <a href="https://www.linkedin.com/in/ananya-ojha-7895a1194/"><img src="{{ url_for('static' , filename = 'Assets/linkedinmentor.png')}}" class="mentorcontact"></a>
+                                        <a href="mailto:ananyaojha24@gmail.com"><img src="{{ url_for('static' , filename = 'Assets/emailmentor.png')}}" class="mentorcontact"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item team_carousel">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <img src="{{ url_for('static' , filename = 'Assets/divyanshi.png')}}" class="divyanshiimg">
+                                    </div>
+                                    <p class="p_n_a_name chngtopop">Divyanshi Garg</p>
+                                    <p class="p_n_a chngtopop">Director of Research and Dev.</p>
+                                    <div class="line"></div>
+                                    <div class="contactcontainer">
+                                        <a href="https://www.linkedin.com/in/divyanshi-garg-572034205"><img src="{{ url_for('static' , filename = 'Assets/linkedinmentor.png')}}" class="mentorcontact"></a>
+                                        <a href="mailto:divyanshigarg.45@gmail.com"><img src="{{ url_for('static' , filename = 'Assets/emailmentor.png')}}" class="mentorcontact"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item team_carousel">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <img src="{{ url_for('static' , filename = 'Assets/eesha.png')}}" class="eeshaimg">
+                                    </div>
+                                    <p class="p_n_a_name chngtopop">Eesha Jain</p>
+                                    <p class="p_n_a chngtopop">Director of Human Resources</p>
+                                    <div class="line"></div>
+                                    <div class="contactcontainer">
+                                        <a href="https://www.linkedin.com/in/eesha-jain-10a547205"><img src="{{ url_for('static' , filename = 'Assets/linkedinmentor.png')}}" class="mentorcontact"></a>
+                                        <a href="mailto:eeshajain987@gmail.com"><img src="{{ url_for('static' , filename = 'Assets/emailmentor.png')}}" class="mentorcontact"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item team_carousel">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <img src="{{ url_for('static' , filename = 'Assets/diyara.png')}}" class="diyaraimg">
+                                    </div>
+                                    <p class="p_n_a_name chngtopop">Diyara Mittal</p>
+                                    <p class="p_n_a chngtopop">Director of Social Media</p>
+                                    <div class="line"></div>
+                                    <div class="contactcontainer">
+                                        <a href="https://www.linkedin.com/in/diyara-mittal-baaa4b200"><img src="{{ url_for('static' , filename = 'Assets/linkedinmentor.png')}}" class="mentorcontact"></a>
+                                        <a href="mailto:diyaramittal@gmail.com"><img src="{{ url_for('static' , filename = 'Assets/emailmentor.png')}}" class="mentorcontact"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item team_carousel">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <img src="{{ url_for('static' , filename = 'Assets/astha.png')}}" class="asthaimg">
+                                    </div>
+                                    <p class="p_n_a_name chngtopop">Astha Sinha</p>
+                                    <p class="p_n_a chngtopop">Director of Project Execution</p>
+                                    <div class="line"></div>
+                                    <div class="contactcontainer">
+                                        <a href="https://www.linkedin.com/in/astha-sinha-196a04201"><img src="{{ url_for('static' , filename = 'Assets/linkedinmentor.png')}}" class="mentorcontact"></a>
+                                        <a href="mailto:astha1208@gmail.com"><img src="{{ url_for('static' , filename = 'Assets/emailmentor.png')}}" class="mentorcontact"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item team_carousel">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <img src="{{ url_for('static' , filename = 'Assets/sanya.png')}}" class="sanyaimg">
+                                    </div>
+                                    <p class="p_n_a_name chngtopop">Sanya Gupta</p>
+                                    <p class="p_n_a chngtopop">Director of Public Relations</p>
+                                    <div class="line"></div>
+                                    <div class="contactcontainer">
+                                        <a href="http://linkedin.com/in/sanya-gupta-8511a1200"><img src="{{ url_for('static' , filename = 'Assets/linkedinmentor.png')}}" class="mentorcontact"></a>
+                                        <a href="mailto:sanya.gupta.0004@gmail.com"><img src="{{ url_for('static' , filename = 'Assets/emailmentor.png')}}" class="mentorcontact"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev teamarrows" href="#carouselControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next teamarrows" href="#carouselControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7  teamgrid">
+                    <div class="row team_grid_row">
+                        <div class="col-sm team_grid_row">
+                            <div class="inner innertable">
+                                <img src="{{ url_for('static' , filename = 'Assets/president1.png')}}" class="president1img_table">
+                                <div class="nitish namepill chngtopop">Nitish<span class="brsmall"></span>Brahma</div>
+                            </div>
+                        </div>
+                        <div class="col-sm team_grid_row">
+                            <div class="inner innertable">
+                                <img src="{{ url_for('static' , filename = 'Assets/president2.png')}}" class="president2img_table">
+                                <div class="akanshi namepill chngtopop">Akanshi<span class="brsmall"></span>Sharma</div>
+                            </div>
+                        </div>
+                        <div class="col-sm team_grid_row">
+                            <div class="inner innertable">
+                                <img src="{{ url_for('static' , filename = 'Assets/nikita.png')}}" class="nikitaimg_table">
+                                <div class="nikita namepill chngtopop">Nikita<span class="brsmall"></span>Gupta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row team_grid_row">
+                        <div class="col-sm team_grid_row">
+                            <div class="inner innertable">
+                                <img src="{{ url_for('static' , filename = 'Assets/ananya.png')}}" class="ananyaimg_table">
+                                <div class="ananya namepill chngtopop">Ananya<span class="brsmall"></span>Ojha</div>
+                            </div>
+                        </div>
+                        <div class="col-sm team_grid_row">
+                            <div class="inner innertable">
+                                <img src="{{ url_for('static' , filename = 'Assets/divyanshi.png')}}" class="divyanshiimg_table">
+                                <div class="divyanshi namepill chngtopop">Divyanshi<span class="brsmall"></span>Garg</div>
+                            </div>
+                        </div>
+                        <div class="col-sm team_grid_row">
+                            <div class="inner innertable">
+                                <img src="{{ url_for('static' , filename = 'Assets/eesha.png')}}" class="eeshaimg_table">
+                                <div class="eesha namepill chngtopop">Eesha<span class="brsmall"></span>Jain</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row team_grid_row">
+                        <div class="col-sm team_grid_row">
+                            <div class="inner innertable">
+                                <img src="{{ url_for('static' , filename = 'Assets/diyara.png')}}" class="diyaraimg_table">
+                                <div class="diyara namepill chngtopop">Diyara<span class="brsmall"></span>Mittal</div>
+                            </div>
+                        </div>
+                        <div class="col-sm team_grid_row">
+                            <div class="inner innertable">
+                                <img src="{{ url_for('static' , filename = 'Assets/astha.png')}}" class="asthaimg_table">
+                                <div class="astha namepill chngtopop">Astha<span class="brsmall"></span>Sinha</div>
+                            </div>
+                        </div>
+                        <div class="col-sm team_grid_row">
+                            <div class="inner innertable">
+                                <img src="{{ url_for('static' , filename = 'Assets/sanya.png')}}" class="sanyaimg_table">
+                                <div class="sanya namepill chngtopop">Sanya<span class="brsmall"></span>Gupta</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="newsletter" class="container-fluid setheightfit">
+
+            <div class="row" style="padding-bottom: 80px ;">
+                <div class="col-sm">
+                    <div class="jumbotron ourjumbo" style="background:transparent">
+                        <div>
+                            <p class="our">Our Newsletter</p>
+                            <p id="subscribe">Subscribe for the latest edition of Enactus Ethos.</p>
+                        </div>
+                    </div>
+                    <form action = "/submit" method = "POST">
+                        <div class="form-group">
+                            <label for="Name1" class="chngtopop">NAME</label>
+                            <input type="text" class="form-control border-dark border-top-0 border-left-0 border-right-0" id="Name1" name = "Name1">
+                        </div>
+                        <div class="form-group">
+                            <label for="Email1" class="chngtopop">EMAIL</label>
+                            <input type="email" class="form-control border-dark border-top-0 border-left-0 border-right-0" id="Email1" name = "Email1" aria-describedby="emailHelp">
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-lg chngtopop newssubmit">Submit</button>
+                    </form>
+                </div>
+                <div class="col-sm">
+                    <img src="{{ url_for('static' , filename = 'Assets/newsletter.jpeg')}}" class="newspic1">
+                </div>
+            </div>
+            <img src="{{ url_for('static' , filename = 'Assets/newsletter.jpeg')}}" class="newspic2">
+        </div>
+
+        <div id="contact" class="container-fluid setheightfit">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="jumbotron ourjumbo" style="background:transparent">
+                        <div>
+                            <p class="our ourcontact">Contact</p>
+                        </div>
+                    </div>
+                    <div id="snsdiv">
+                        <a href="http://linkedin.com/in/enactus-dduc-88b465218"><img src="{{ url_for('static' , filename = 'Assets/linkedin.png')}}" class="sns"></a>
+                        <a href="https://www.instagram.com/enactus_dduc/"><img src="{{ url_for('static' , filename = 'Assets/instagram.png')}}" class="sns"></a>
+                        <a href="https://twitter.com/enactus_dduc"><img src="{{ url_for('static' , filename = 'Assets/twitter.png')}}" class="sns"></a>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <form id="contact_form" action = "/message" method="POST">
+                        <div class="form-group">
+                            <label for="Name2" class="chngtopop">NAME</label>
+                            <input type="text" class="form-control border-dark border-top-0 border-left-0 border-right-0" id="Name2" name = "Name2">
+                        </div>
+                        <div class="form-group">
+                            <label for="Email2" class="chngtopop">EMAIL</label>
+                            <input type="email" class="form-control border-dark border-top-0 border-left-0 border-right-0" id="Email2" name = "Email2" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="Msg2" class="chngtopop">MESSAGE</label>
+                            <input type="text" class="form-control border-dark border-top-0 border-left-0 border-right-0" id="Msg2" name = "Message2" aria-describedby="emailHelp">
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-lg chngtopop contactsubmit">GET IN TOUCH</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 0%;">
+                <footer id="footer" class="container-fluid">
+                    <p>
+                        Deen Dayal Upadhyaya College<br> Sector-3, Dwarka, New Delhi-110078| Email: enactus@ddu.du.ac.in<br> Copyright © 2022 Enactus DDUC
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static' , filename = 'Resources/main_script.js')}}""></script>
+</body>
+
+</html>
