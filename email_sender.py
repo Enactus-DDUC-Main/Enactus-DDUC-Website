@@ -19,10 +19,8 @@ def send_email(email_body, sender_name = "" , sender_email_id = ""):
         msg.set_content(body)
         msg['To'] = receiver_email_id
         
-        try:
-            server.send_message(msg)
-        except Exception as e:
-            server.quit()
+        server.send_message(msg)
+        
 
     except Exception as e:
         print ("Something went wrong")
