@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect
 import database_connector
+import email_sender
+
 print ("Importing successfully done")
 app = Flask(__name__, template_folder="main")
 
@@ -31,7 +33,7 @@ Message : {message}'''
         
         print (body)
         
-        #email_sender.send_email(body)
+        email_sender.send_email(body, name , email)
         print ("Redirected from main contact form")
         
     return redirect("/?#contact")
